@@ -1,1 +1,1 @@
-# veriano-goit-murkup-hw-07
+# goit-murkup-hw-06
