@@ -162,7 +162,7 @@ img {
   transform: translateY(26px);
   background-color: var(--accent-color);
 }
-.main-title {
+.first-section__main-title {
   margin: 0 auto 30px;
   width: 696px;
   font-weight: 900;
@@ -170,12 +170,12 @@ img {
   line-height: 1.36;
   color: var(--white-color);
 }
-.primary-button:hover,
-.primary-button:focus {
+.first-section__primary-button:hover,
+.first-section__primary-button:focus {
   background-color: var(--white-color);
   color: var(--accent-color);
 }
-.primary-button {
+.first-section__primary-button {
   padding: 10px 32px;
   background-color: var(--accent-color);
   color: var(--white-color);

@@ -1,0 +1,8 @@
+%blue-color {
+  position: relative;
+  color: $accent-color;
+}
+
+%link {
+  text-decoration: none;
+}

@@ -3,14 +3,14 @@
   padding: 24px 0;
 
   &::after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  display: block;
-  background-color: $line-color;
-  width: 100%;
-  height: 1px;
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    display: block;
+    background-color: $line-color;
+    width: 100%;
+    height: 1px;
   }
 }
 
@@ -25,13 +25,13 @@
   align-items: center;
 
   &__flex {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
   }
 
   &__header-icon {
-  margin-right: 10px;
-  fill: $onemore-color;
+    margin-right: 10px;
+    fill: $onemore-color;
   }
 }
 
@@ -40,23 +40,13 @@
   align-items: center;
 
   &__list-item:not(:last-child) {
-  margin-right: 50px;
+    margin-right: 50px;
   }
 
   &__flex--contacts {
-  margin-left: auto;
+    margin-left: auto;
   }
 }
-
-%blue-color {
-  $accent-color;
-}
-
-%link {
-  text-decoration: none;
-}
-
-
 
 .header-list__logo {
   @extend %blue-color;
@@ -79,24 +69,29 @@
   font-size: 14px;
   line-height: 1.17;
 
-  transition: fill 250ms $timing-function,
-    color 250ms $timing-function;
+  transition: fill 250ms $timing-function, color 250ms $timing-function;
 
   &:hover,
   &:focus {
-  color: $accent-color;
+    color: $accent-color;
   }
 
   &:hover .header-icon,
   &:focus .header-icon {
-  fill: $accent-color;
+    fill: $accent-color;
   }
 }
 
-.header-list__navigation--blue-color {
-  position: relative;
-}
-.header-list__navigation--blue-color::after {
+.header-list__navigation {
+  @extend %blue-color;
+  font-weight: 500;
+  font-size: 14px;
+  color: $primary-color;
+
+  transition: color 250ms $timing-function;
+
+  &::after {
+  @extend %blue-color;
   content: "";
   display: block;
   position: absolute;
@@ -106,18 +101,11 @@
   border-radius: 2px;
   transform: translateY(26px);
   background-color: $accent-color;
-}
-.header-list__navigation {
-  font-weight: 500;
-  font-size: 14px;
-  color: $primary-color;
+  }
 
-  transition: color 250ms $timing-function;
-}
-.header-list__navigation:hover,
-.header-list__navigation:focus {
+  &:hover,
+  &:focus {
   color: $accent-color;
+  }
 }
-.header-list__navigation--blue-color {
-  color: $accent-color;
-}
+
