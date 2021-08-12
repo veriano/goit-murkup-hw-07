@@ -2,7 +2,13 @@
   position: relative;
   color: $accent-color;
 }
-
 %link {
   text-decoration: none;
+}
+%flex {
+  display: flex;
+  justify-content: space-between;
+}
+%contacts {
+  margin-left: auto;
 }

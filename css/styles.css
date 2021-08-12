@@ -189,14 +189,14 @@ img {
   transition: background-color 250ms var(--timing-function),
     color 250ms var(--timing-function);
 }
-.title-one {
+.container__title-one {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.17;
   color: var(--primary-color);
 }
-.description-list {
+.container__description-list {
   font-size: 14px;
   line-height: 1.7;
   color: var(--onemore-color);
@@ -213,7 +213,6 @@ img {
 }
 .overlay-picture {
   position: absolute;
-  display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
