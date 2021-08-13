@@ -2,7 +2,8 @@
   position: relative;
   padding: 24px 0px;
 
-  &::after {
+
+    &::after {
     content: "";
     position: absolute;
     z-index: 1;
@@ -11,7 +12,7 @@
     background-color: $line-color;
     width: 100%;
     height: 1px;
-  }
+    }
 }
 
 .container {

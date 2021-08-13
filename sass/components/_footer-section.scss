@@ -1,0 +1,155 @@
+.footer-section {
+  padding: 60px 0;
+  background-color: var(--black-color);
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  &--footer-flex {
+      display: flex;
+  }
+}
+
+.footer-logo-wrapper {
+  margin-bottom: 20px;
+
+  &__logo {
+  @extend %link;
+  @extend %blue-color;
+  height: 31px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.38;
+  }
+
+  &__studio {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--white-color);
+  }
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
+
+  &__footer-item:not(:last-child) {
+  margin-bottom: 9px;
+  }
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
+
+  &__direction:hover,
+  &__direction:focus {
+  color: var(--accent-color);
+  }
+
+  &__direction {
+  @extend %link;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.7;
+  color: var(--white-color);
+
+  transition: color 250ms var(--timing-function);
+  }
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
+
+  &__footer-link:hover,
+  &__footer-link:focus {
+  color: var(--accent-color);
+  }
+
+  &__footer-link {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--link-color);
+
+  transition: color 250ms var(--timing-function);
+  }
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  &__footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--white-color);
+  margin: 12px 0 20px;
+  }
+}
+
+.footer-list-icons {
+  display: flex;
+  width: 206px;
+  justify-content: space-between;
+
+  &__svg-link {
+  @extend %svg-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+
+  transition: background-color 250ms var(--timing-function);
+  }
+
+  &__svg-link:not(:last-child) {
+  margin-right: 10px;
+  }
+}
+
+.footer-list-icons {
+  display: flex;
+  width: 206px;
+  justify-content: space-between;
+
+  &__svg-link:hover,
+  &__svg-link:focus {
+  background-color: var(--accent-color);
+  }
+
+  &--footer-social-icon {
+  fill: var(--white-color);
+  }
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  &__form-set {
+  margin: 12px 0 0 auto;
+  }
+
+  &__form-caption {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--white-color);
+  margin-bottom: 20px;
+  }
+}
+

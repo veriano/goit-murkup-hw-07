@@ -1,0 +1,43 @@
+.clients-section {
+  padding: 94px 0;
+
+  &__clients-title {
+    width: 390px;
+    margin: 0 auto 50px;
+    font-weight: 700;
+    font-size: 36px;
+  }
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  &__client-list {
+    @extend %flex;
+  }
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  &__client-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+
+    transition: fill 250ms var(--timing-function),
+      border 250ms var(--timing-function);
+  }
+
+  &__logo-client {
+    @extend %icon-color;
+  }
+}
