@@ -1,9 +1,8 @@
 {
     "version": 3,
-    "mappings": "AACA,GAAG",
+    "mappings": "",
     "sources": [
-        "main.scss",
-        "utils/_variables.scss"
+        "main.scss"
     ],
     "names": [],
     "file": "main.css"
