@@ -558,6 +558,7 @@ img {
   transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
+  padding: 40px;
   border-radius: 4px;
   background-color: var(--white-color);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
@@ -582,9 +583,6 @@ img {
   border-radius: 50%;
   cursor: pointer;
 }
-.modal-form {
-  padding: 40px;
-}
 .form-second-caption {
   font-size: 20px;
   font-weight: 700;
@@ -597,6 +595,10 @@ img {
   color: var(--onemore-color);
   margin-bottom: 4px;
 }
+.form-label {
+  display: block;
+  margin-bottom: 10px;
+}
 .modal-form-field {
   display: block;
   position: relative;
@@ -605,7 +607,6 @@ img {
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-bottom: 10px;
   cursor: pointer;
 
   transition: border-color 250ms var(--timing-function);
@@ -632,6 +633,10 @@ img {
 
   transition: fill 250ms var(--timing-function);
 }
+.form-coments-label {
+  display: block;
+  margin-bottom: 20px;
+}
 .modal-field-coments {
   width: 100%;
   height: 120px;
@@ -639,7 +644,6 @@ img {
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-bottom: 20px;
   cursor: pointer;
 
   transition: border-color 250ms var(--timing-function);
