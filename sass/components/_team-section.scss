@@ -106,7 +106,7 @@
   &__svg-link:hover .icon-color,
   &__svg-link:focus .icon-color {
   fill: var(--white-color);
-
+  
   transition: fill 250ms var(--timing-function);
   }
 }
