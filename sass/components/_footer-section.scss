@@ -17,7 +17,6 @@
   margin-bottom: 20px;
 
   &__logo {
-  @extend %link;
   @extend %blue-color;
   height: 31px;
   font-family: "Raleway", sans-serif;
@@ -56,7 +55,6 @@
   }
 
   &__direction {
-  @extend %link;
   font-size: 14px;
   font-style: normal;
   line-height: 1.7;

@@ -61,7 +61,6 @@
   flex-wrap: wrap;
 
   &__progect-link {
-   @extend %link;
   display: block;
 
   transition: box-shadow 250ms var(--timing-function);

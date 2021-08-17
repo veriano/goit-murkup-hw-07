@@ -1,10 +1,5 @@
 %blue-color {
-  position: relative;
   color: $accent-color;
-}
-
-%link {
-  text-decoration: none;
 }
 
 %flex {
@@ -17,7 +12,7 @@
 }
 
 %icon-color {
-  fill: var(--icon-color);
+  fill: $icon-color;
 }
 
 %svg-color {
