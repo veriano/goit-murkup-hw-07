@@ -1,12 +1,12 @@
 .team-section {
-  background-color: var(--team-color);
+  background-color: $team-color;
   padding: 94px 0;
 
   &__title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
-  color: var(--primary-color);
+  color: $primary-color;
   text-align: center;
   }
 }
@@ -15,10 +15,10 @@
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
 
-  &__list {
+.team-list {
   @extend %flex;
-  }
 
   &__description-team {
   text-align: center;
@@ -27,7 +27,7 @@
 
 .team-wrapper {
   padding: 30px 0;
-  background-color: var(--white-color);
+  background-color: white-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -36,36 +36,32 @@
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
-  color: var(--primary-color);
+  color: primary-color;
   }
 
   &__position {
   margin-bottom: 16px;
-  color: var(--onemore-color);
+  color: $onemore-color;
   }
 }
   
-.team-wrapper {
-  padding: 30px 0;
-  background-color: var(--white-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-
-  &__icons {
+.team-wrapper__icons {
+  @extend %flex;
   padding: 0 32px;
-  }
 }
 
+
 .team-wrapper {
   padding: 30px 0;
-  background-color: var(--white-color);
+  background-color: $icon-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
   &__icon-color {
-  fill: var(--icon-color);
+  fill: $icon-color;
+
+  transition: fill 250ms $timing-function;
   }
 
   &__svg-link {
@@ -76,38 +72,32 @@
   height: 44px;
   border-radius: 50px;
 
-  transition: background-color 250ms var(--timing-function);
+  transition: background-color 250ms $timing-function;
   }
 }
 
 .team-wrapper {
   padding: 30px 0;
-  background-color: var(--white-color);
+  background-color: $white-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-
-  &__svg-link:not(:last-child) {
-  margin-right: 10px;
-  }
 
   &__svg-link:hover,
   &__svg-link:focus {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   }
 }
 
 .team-wrapper {
   padding: 30px 0;
-  background-color: var(--white-color);
+  background-color: $white-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  &__svg-link:hover .icon-color,
-  &__svg-link:focus .icon-color {
-  fill: var(--white-color);
-  
-  transition: fill 250ms var(--timing-function);
+  &__svg-link:hover &__icon-color,
+  &__svg-link:focus &__icon-color {
+  fill: $white-color;
   }
 }

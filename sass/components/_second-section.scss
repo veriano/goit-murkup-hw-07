@@ -40,11 +40,12 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.17;
-  color: var(--primary-color);
+  color: $primary-color;
   }
+  
   &__description-list {
   font-size: 14px;
   line-height: 1.7;
-  color: var(--onemore-color);
+  color: $onemore-color;
   }
 }
