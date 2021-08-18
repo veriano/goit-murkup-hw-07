@@ -27,11 +27,26 @@
     border: 1px solid $icon-color;
     border-radius: 4px;
 
-    transition: fill 250ms $timing-function,
-      border 250ms $timing-function;
+    transition: border 250ms $timing-function;
   }
 
   &__logo-client {
     @extend %icon-color;
+
+    transition: fill 250ms $timing-function;
+  }
+}
+
+.client-list {
+  @extend %flex;
+
+  &__client-link:hover,
+  &__client-link:focus {
+  border: 1px solid $accent-color;
+  }
+
+  &__client-link:hover &__logo-client,
+  &__client-link:focus &__logo-client {
+  fill: $accent-color;
   }
 }
