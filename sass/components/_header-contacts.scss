@@ -3,7 +3,7 @@
   @extend %contacts;
 
   &__list-item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 30px;
   }
 }
 
@@ -23,6 +23,7 @@
 .header-contacts__link-contact:focus {
    color: $accent-color;
 }
+
 
 .header-contacts__header-icon {
   margin-right: 10px;

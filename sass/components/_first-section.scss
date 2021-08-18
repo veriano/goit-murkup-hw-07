@@ -19,30 +19,14 @@
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  color: var(--white-color);
-  }
+  color: $white-color;
+ }
 }
 
-.first-section {
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 200px 0;
-  text-align: center;
-  background-color: #c4c4c4;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-
-
-  &__primary-button {
+.first-section__primary-button {
   padding: 10px 32px;
-  background-color: var(--accent-color);
-  color: var(--white-color);
+  background-color: $accent-color;
+  color: $white-color;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
@@ -50,13 +34,13 @@
   border-radius: 4px;
   cursor: pointer;
 
-  transition: background-color 250ms var(--timing-function),
-    color 250ms var(--timing-function);
-  }
-
-  &__primary-button:hover,
-  &__primary-button:focus {
-  background-color: var(--white-color);
-  color: var(--accent-color);
-  }
+  transition: background-color 250ms $timing-function,
+    color 250ms $timing-function;
 }
+
+.first-section__primary-button:hover,
+.first-section__primary-button:focus {
+  background-color: $white-color;
+  color: $accent-color;
+}
+
