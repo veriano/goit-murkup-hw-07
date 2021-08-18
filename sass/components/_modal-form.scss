@@ -1,0 +1,79 @@
+.modal__form-second-caption {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.17;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.modal__form-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal__name-modal-input {
+  font-size: 12px;
+  color: $onemore-color;
+  margin-bottom: 4px;
+}
+
+.modal__input-wrapper {
+  position: relative;
+}
+
+.modal__modal-form-field {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: border-color 250ms $timing-function;
+
+  
+  .modal__input-wrapper:hover &,
+  .modal__input-wrapper:focus & {
+    border-color: $accent-color;   
+  }
+}
+
+.modal__svg-modal-input {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+  transition: fill 250ms $timing-function;
+
+
+  .modal__modal-input-wrapper:hover &,
+  .modal__modal-input-wrapper:focus & {
+  fill: $accent-color;
+  }
+}
+
+.modal__modal-field-coments {
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: border-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+  border-color: $accent-color;
+  }
+}
+
+.modal__modal-field-coments::placeholder {
+  font-size: 14px;
+  color: rgba(117, 117, 117, 0.5);
+}
+

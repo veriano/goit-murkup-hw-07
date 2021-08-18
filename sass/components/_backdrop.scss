@@ -10,262 +10,30 @@
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
 
-  transition: opacity 250ms var(--timing-function);
+  transition: opacity 250ms $timing-function;
 
   &--is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.5);
   }
 }
 
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
-  padding: 40px;
-  border-radius: 4px;
-  background-color: var(--white-color);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
-    0 2px 1px rgba(0, 0, 0, 0.2);
-
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms var(--timing-function);
-
-  &__modal-button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 30px;
-  height: 30px;
-  margin: 8px;
-  background-color: var(--white-color);
-  border: solid 1px rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  cursor: pointer;
-  }
-
-  &__modal-button:hover .modal__svg-modal-button,
-  &__modal-button:focus .modal__svg-modal-button {
-  fill: var(--accent-color);
-  }
-}
-
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
-  padding: 40px;
-  border-radius: 4px;
-  background-color: var(--white-color);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
-    0 2px 1px rgba(0, 0, 0, 0.2);
-
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms var(--timing-function);
-
-  &__form-second-caption {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.17;
-  margin-bottom: 12px;
-  text-align: center;
-  }
-
-  &__form-label {
-  display: block;
-  margin-bottom: 10px;
-  }
-}
-
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
-  padding: 40px;
-  border-radius: 4px;
-  background-color: var(--white-color);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
-    0 2px 1px rgba(0, 0, 0, 0.2);
-
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms var(--timing-function);
-
-  &__name-modal-input {
-  font-size: 12px;
-  color: var(--onemore-color);
-  margin-bottom: 4px;
-  }
-
-  &__modal-input-wrapper {
-  position: relative;
-  }
-}
-
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
-  padding: 40px;
-  border-radius: 4px;
-  background-color: var(--white-color);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
-    0 2px 1px rgba(0, 0, 0, 0.2);
-
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms var(--timing-function);
-
-  &__modal-input-wrapper:hover &__modal-form-field,
-  &__modal-input-wrapper:focus &__modal-form-field,
-  &__modal-field-coments:hover,
-  &__modal-field-coments:focus {
-  border-color: var(--accent-color);
-  }
-
-  &__modal-input-wrapper:hover &__svg-modal-input,
-  &__modal-input-wrapper:focus &__svg-modal-input {
-  fill: var(--accent-color);
-  }
-}
-
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
-  padding: 40px;
-  border-radius: 4px;
-  background-color: var(--white-color);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
-    0 2px 1px rgba(0, 0, 0, 0.2);
-
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms var(--timing-function);
-
-  &__svg-modal-input {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  transform: translateY(-50%);
-  cursor: pointer;
-
-  transition: fill 250ms var(--timing-function);
-  }
-}
-
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
-  padding: 40px;
-  border-radius: 4px;
-  background-color: var(--white-color);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
-    0 2px 1px rgba(0, 0, 0, 0.2);
-
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms var(--timing-function);
-
-  &__form-coments-label {
+.modal__form-coments-label {
   display: block;
   margin-bottom: 20px;
-  }
-
-  &__modal-field-coments {
-  width: 100%;
-  height: 120px;
-  padding: 12px 16px;
-  resize: none;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  cursor: pointer;
-
-  transition: border-color 250ms var(--timing-function);
-  }
 }
 
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
-  padding: 40px;
-  border-radius: 4px;
-  background-color: var(--white-color);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
-    0 2px 1px rgba(0, 0, 0, 0.2);
-
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms var(--timing-function);
-
-  &__modal-field-coments::placeholder {
-  font-size: 14px;
-  color: rgba(117, 117, 117, 0.5);
-  }
-}
-
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
-  padding: 40px;
-  border-radius: 4px;
-  background-color: var(--white-color);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
-    0 2px 1px rgba(0, 0, 0, 0.2);
-
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms var(--timing-function);
-
-  &__checkbox-label {
+.modal__checkbox-label {
   display: block;
   position: relative;
   margin: 0 11px 30px 12px;
-  }
-
-  &__checkbox--visualli-hidden:checked + &__svg-checkbox {
-  background-color: var(--accent-color);
-  fill: var(--accent-color);
-  }
 }
 
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
-  padding: 40px;
-  border-radius: 4px;
-  background-color: var(--white-color);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
-    0 2px 1px rgba(0, 0, 0, 0.2);
+.modal__checkbox--visualli-hidden:checked + &__svg-checkbox {
+  background-color: $accent-color;
+  fill: $accent-color;
+}
 
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms var(--timing-function);
-
-  &__svg-checkbox {
+.modal__svg-checkbox {
   position: absolute;
   top: 50%;
   left: 0;
@@ -275,17 +43,17 @@
   background-origin: border-box;
   cursor: pointer;
 
-  transition: background-color 250ms var(--timing-function),
-    fill 250ms var(--timing-function);
-  }
+  transition: background-color 250ms $timing-function,
+    fill 250ms $timing-function;
+}
 
-  &__text-checkbox {
+.modal__text-checkbox {
   font-size: 14px;
   line-height: 1.71;
-  color: var(--onemore-color);
+  color: $onemore-color;
   margin-left: 24.38px;
-  }
 }
+
 
 .modal {
   position: absolute;
@@ -296,41 +64,24 @@
   height: 581px;
   padding: 40px;
   border-radius: 4px;
-  background-color: var(--white-color);
+  background-color: $white-color;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
     0 2px 1px rgba(0, 0, 0, 0.2);
 
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms var(--timing-function);
+  transition: transform 250ms $timing-function;
 
 
   &__link-checkbox {
   font-size: 14px;
   line-height: 1.71;
-  color: var(--accent-color);
+  color: $accent-color;
   text-decoration-color: currentColor;
   text-underline-position: under;
   }
 }
 
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
-  padding: 40px;
-  border-radius: 4px;
-  background-color: var(--white-color);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
-    0 2px 1px rgba(0, 0, 0, 0.2);
-
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms var(--timing-function);
-
-
-  &__button-modal-form {
+.modal__button-modal-form {
   display: block;
   width: 200px;
   font-size: 16px;
@@ -341,10 +92,9 @@
   text-align: center;
   border: none;
   border-radius: 4px;
-  background-color: var(--accent-color);
-  color: var(--white-color);
+  background-color: $accent-color;
+  color: $white-color;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  }
 }
 

@@ -13,24 +13,3 @@
   }
 }
 
-.footer-wrapper {
-  display: flex;
-  flex-direction: column;
-  margin-right: 70px;
-
-  &__direction:hover,
-  &__direction:focus {
-    color: $accent-color;
-  }
-
-  &__direction {
-    font-size: 14px;
-    font-style: normal;
-    line-height: 1.7;
-    color: $white-color;
-
-    transition: color 250ms $timing-function;
-  }
-}
-
-
