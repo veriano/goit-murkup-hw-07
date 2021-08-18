@@ -1,6 +1,6 @@
 .footer-section {
   padding: 60px 0;
-  background-color: var(--black-color);
+  background-color: $black-color;
 }
 
 .container {
@@ -12,27 +12,6 @@
       display: flex;
   }
 }
-
-.footer-logo-wrapper {
-  margin-bottom: 20px;
-
-  &__logo {
-  @extend %blue-color;
-  height: 31px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.38;
-  }
-
-  &__studio {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  color: var(--white-color);
-  }
-}
-
 
 .footer-wrapper {
   display: flex;
@@ -51,37 +30,16 @@
 
   &__direction:hover,
   &__direction:focus {
-  color: var(--accent-color);
+  color: $accent-color;
   }
 
   &__direction {
   font-size: 14px;
   font-style: normal;
   line-height: 1.7;
-  color: var(--white-color);
+  color: $white-color;
 
-  transition: color 250ms var(--timing-function);
-  }
-}
-
-.footer-wrapper {
-  display: flex;
-  flex-direction: column;
-  margin-right: 70px;
-
-  &__footer-link:hover,
-  &__footer-link:focus {
-  color: var(--accent-color);
-  }
-
-  &__footer-link {
-  font-weight: normal;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.7;
-  color: var(--link-color);
-
-  transition: color 250ms var(--timing-function);
+  transition: color 250ms $timing-function;
   }
 }
 
@@ -93,7 +51,7 @@
   &__footer-title {
   font-weight: 700;
   font-size: 14px;
-  color: var(--white-color);
+  color: $white-color;
   margin: 12px 0 20px;
   }
 }
@@ -112,7 +70,7 @@
   height: 44px;
   border-radius: 50px;
 
-  transition: background-color 250ms var(--timing-function);
+  transition: background-color 250ms $timing-function;
   }
 
   &__svg-link:not(:last-child) {
@@ -127,11 +85,11 @@
 
   &__svg-link:hover,
   &__svg-link:focus {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   }
 
   &--footer-social-icon {
-  fill: var(--white-color);
+  fill: $white-color;
   }
 }
 
@@ -147,7 +105,7 @@
   &__form-caption {
   font-size: 14px;
   font-weight: 700;
-  color: var(--white-color);
+  color: $white-color;
   margin-bottom: 20px;
   }
 }
@@ -184,7 +142,7 @@
   width: 200px;
   height: 50px;
   border-radius: 4px;
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   border: none;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
