@@ -2,7 +2,7 @@
   color: #2196f3;
 }
 
-.header-navigation, .header-contacts, .container__list, .team-list, .team-wrapper__icons, .client-list, .buttons {
+.header-navigation, .header-contacts, .container__list, .team-list, .team-wrapper__icons, .client-list, .buttons, .footer-list-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -919,6 +919,46 @@ a {
   margin-right: 70px;
 }
 
+.footer-wrapper__direction:hover, .footer-wrapper__direction:focus {
+  color: #2196f3;
+}
+
+.footer-wrapper__direction {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.7;
+  color: #ffffff;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-logo-wrapper {
+  margin-bottom: 20px;
+}
+
+.footer-logo-wrapper__logo {
+  height: 31px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.38;
+}
+
+.footer-logo-wrapper__studio {
+  color: #ffffff;
+}
+
+.footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 70px;
+}
+
 .footer-wrapper__footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -943,6 +983,31 @@ a {
   font-style: normal;
   line-height: 1.7;
   color: #ffffff;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 70px;
+}
+
+.footer-wrapper__footer-link:hover, .footer-wrapper__footer-link:focus {
+  color: #2196f3;
+}
+
+.footer-wrapper__footer-link {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -987,18 +1052,8 @@ a {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-list-icons__svg-link:not(:last-child) {
-  margin-right: 10px;
-}
-
 .footer-list-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 206px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .footer-list-icons__svg-link:hover, .footer-list-icons__svg-link:focus {
@@ -1009,17 +1064,11 @@ a {
   fill: #ffffff;
 }
 
-.container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.container__form-set {
+.footer-form {
   margin: 12px 0 0 auto;
 }
 
-.container__form-caption {
+.footer-form__caption {
   font-size: 14px;
   font-weight: 700;
   color: #ffffff;
@@ -1043,6 +1092,7 @@ a {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: transparent;
   background-origin: border-box;
+  color: #ffffff;
   cursor: pointer;
 }
 
@@ -1101,49 +1151,8 @@ a {
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 6%;
-  color: var(--white-color);
-  margin-right: 10px;
-}
-
-.footer-logo-wrapper {
-  margin-bottom: 20px;
-}
-
-.footer-logo-wrapper__logo {
-  height: 31px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.38;
-}
-
-.footer-logo-wrapper__studio {
   color: #ffffff;
-}
-
-.footer-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-right: 70px;
-}
-
-.footer-wrapper__footer-link:hover, .footer-wrapper__footer-link:focus {
-  color: #2196f3;
-}
-
-.footer-wrapper__footer-link {
-  font-weight: normal;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.6);
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: 10px;
 }
 
 .backdrop {

@@ -9,17 +9,7 @@
   margin: 0 auto;
 
   &--footer-flex {
-      display: flex;
-  }
-}
-
-.footer-wrapper {
-  display: flex;
-  flex-direction: column;
-  margin-right: 70px;
-
-  &__footer-item:not(:last-child) {
-  margin-bottom: 9px;
+    display: flex;
   }
 }
 
@@ -30,131 +20,17 @@
 
   &__direction:hover,
   &__direction:focus {
-  color: $accent-color;
+    color: $accent-color;
   }
 
   &__direction {
-  font-size: 14px;
-  font-style: normal;
-  line-height: 1.7;
-  color: $white-color;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.7;
+    color: $white-color;
 
-  transition: color 250ms $timing-function;
+    transition: color 250ms $timing-function;
   }
 }
 
-.container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-
-  &__footer-title {
-  font-weight: 700;
-  font-size: 14px;
-  color: $white-color;
-  margin: 12px 0 20px;
-  }
-}
-
-.footer-list-icons {
-  display: flex;
-  width: 206px;
-  justify-content: space-between;
-
-  &__svg-link {
-  @extend %svg-color;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50px;
-
-  transition: background-color 250ms $timing-function;
-  }
-
-  &__svg-link:not(:last-child) {
-  margin-right: 10px;
-  }
-}
-
-.footer-list-icons {
-  display: flex;
-  width: 206px;
-  justify-content: space-between;
-
-  &__svg-link:hover,
-  &__svg-link:focus {
-  background-color: $accent-color;
-  }
-
-  &--footer-social-icon {
-  fill: $white-color;
-  }
-}
-
-.container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-
-  &__form-set {
-  margin: 12px 0 0 auto;
-  }
-
-  &__form-caption {
-  font-size: 14px;
-  font-weight: 700;
-  color: $white-color;
-  margin-bottom: 20px;
-  }
-}
-
-.form-field-button-wrapper {
-  display: flex;
-
-  &__form-field {
-  width: 358px;
-  height: 50px;
-  padding: 15px 16px;
-  margin-right: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-color: transparent;
-  background-origin: border-box;
-  cursor: pointer;
-  }
-  &__form-field::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  color: rgba(255, 255, 255, 0.6);
-  }
-}
-
-.form-field-button-wrapper {
-  display: flex;
-
-  &__form-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 50px;
-  border-radius: 4px;
-  background-color: $accent-color;
-  border: none;
-  cursor: pointer;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
-
-  &__text-button {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.87;
-  letter-spacing: 6%;
-  color: var(--white-color);
-  margin-right: 10px; 
-  }
-}
 
