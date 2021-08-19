@@ -30,7 +30,7 @@
         "../sass/components/_modal-form-field.scss",
         "../sass/components/_modal-form-comments.scss",
         "../sass/components/_modal-form-checkbox.scss",
-        "../sass/components/_button-modal-form.scss"
+        "../sass/components/modal-form-button.scss"
     ],
     "names": [],
     "file": "main.css"
