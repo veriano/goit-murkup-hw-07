@@ -1,9 +1,10 @@
 body {
   background-color: $white-color;
   color: $primary-color;
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: $primary-font;
   margin: 0;
 }
+
 h1,
 h2,
 h3,
@@ -22,6 +23,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 a {
   text-decoration: none;
 }

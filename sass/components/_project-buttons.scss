@@ -18,12 +18,6 @@
   transition: background-color 250ms $timing-function,
     color 250ms $timing-function, box-shadow 250ms $timing-function;
   }
-}
-
-
-.buttons {
-  @extend %flex;
-  margin-bottom: 50px;
 
   &__secondary-button:hover,
   &__secondary-button:focus {
