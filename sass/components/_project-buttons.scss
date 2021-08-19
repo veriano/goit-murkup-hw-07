@@ -1,10 +1,8 @@
 .buttons {
   @extend %flex;
+  width: 611px;
+  margin: 0 auto;
   margin-bottom: 50px;
-
-  &__second-buttons:not(:last-child) {
-  margin-right: 8px;
-  }
 
   &__secondary-button {
   padding: 6px 22px;
@@ -21,6 +19,7 @@
     color 250ms $timing-function, box-shadow 250ms $timing-function;
   }
 }
+
 
 .buttons {
   @extend %flex;

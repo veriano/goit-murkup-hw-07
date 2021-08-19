@@ -1,10 +1,13 @@
+.backdrop--is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.5);
+}
+
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 528px;
-  height: 581px;
   padding: 40px;
   border-radius: 4px;
   background-color: $white-color;
@@ -14,7 +17,7 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms $timing-function;
 
-  &__modal-close-button {
+  &__close-button {
   position: absolute;
   top: 0;
   right: 0;
@@ -27,8 +30,8 @@
   cursor: pointer;
   }
 
-  &__modal-close-button:hover &__svg-modal-close-button,
-  &__modal-close-button:focus &__svg-modal-close-button {
+  &__close-button:hover &__svg-close-button,
+  &__close-button:focus &__svg-close-button {
   fill: $accent-color;
   }
 }

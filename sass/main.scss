@@ -13,6 +13,7 @@
 @import "./components/clients-section";
 @import "./components/project-section";
 @import "./components/project-buttons";
+@import "./components/card-set";
 @import "./components/footer-section";
 @import "./components/footer-logo";
 @import "./components/footer-contacts";
@@ -20,5 +21,8 @@
 @import "./components/footer-form";
 @import "./components/backdrop";
 @import "./components/modal";
-@import "./components/modal-form";
-@import "./components/button-modal-form"
+@import "./components/modal-form-caption";
+@import "./components/modal-form-field";
+@import "./components/modal-form-comments";
+@import "./components/modal-form-checkbox";
+@import "./components/button-modal-form";
