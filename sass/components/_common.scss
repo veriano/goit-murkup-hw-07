@@ -27,3 +27,47 @@ img {
 a {
   text-decoration: none;
 }
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.images-section {
+  padding: 47px 0 94px 0;
+}
+
+.team-section {
+  background-color: $team-color;
+  padding: 94px 0;
+}
+
+.clients-section {
+  padding: 94px 0;
+}
+
+.project-section {
+  padding: 94px 0;
+}
+
+.footer-section {
+  padding: 60px 0;
+  background-color: $black-color;
+}
+
+.container--footer-flex {
+    display: flex;
+}
+
+.container__footer-title {
+    font-weight: 700;
+    font-size: 14px;
+    color: $white-color;
+    margin: 12px 0 20px;
+}
+
+
+
+
+

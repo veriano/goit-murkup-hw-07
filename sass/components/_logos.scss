@@ -1,0 +1,32 @@
+// Header Logo
+.header-list__logo {
+  @extend %blue-color;
+  height: 31px;
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.38;
+
+  .header-list__web {
+    margin-right: 93px;
+    color: $black-dark-color;
+  }
+}
+// Footer Logo
+
+.footer-logo-wrapper {
+  margin-bottom: 20px;
+
+  &__logo {
+  @extend %blue-color;
+  height: 31px;
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.38;
+  }
+
+  &__studio {
+  color: $white-color;
+  }
+}
