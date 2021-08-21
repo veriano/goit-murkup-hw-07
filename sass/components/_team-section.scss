@@ -58,10 +58,15 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
+<<<<<<< Updated upstream
   &__icon-color {
   fill: $icon-color;
 
   transition: fill 250ms $timing-function;
+=======
+  &--icon-color {
+  fill: var(--icon-color);
+>>>>>>> Stashed changes
   }
 
   &__svg-link {
@@ -96,8 +101,16 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
+<<<<<<< Updated upstream
   &__svg-link:hover &__icon-color,
   &__svg-link:focus &__icon-color {
   fill: $white-color;
+=======
+  &__svg-link:hover .team-wrapper--icon-color,
+  &__svg-link:focus .team-wrapper--icon-color {
+  fill: var(--white-color);
+
+  transition: fill 250ms var(--timing-function);
+>>>>>>> Stashed changes
   }
 }
