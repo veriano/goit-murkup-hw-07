@@ -1,23 +1,5 @@
-.images-section {
-  padding: 47px 0 94px 0;
-
-  &__title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  color: primary-color;
-  text-align: center;
-  }
-}
-
-.container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-
-  &__list {
+.images__list {
   @extend %flex;
-  }
 }
 
 .picture-item-wrapper {

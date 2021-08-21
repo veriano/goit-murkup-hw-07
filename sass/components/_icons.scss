@@ -1,0 +1,72 @@
+// Team-list-icons
+
+.list-icons {
+  @extend %flex;
+  padding: 0 32px;
+
+  &__icon-color {
+  fill: $icon-color;
+
+  transition: fill 250ms $timing-function;
+  }
+
+  &__svg-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+
+  transition: background-color 250ms $timing-function;
+  }
+}
+
+.list-icons {
+  @extend %flex;
+  padding: 0 32px;
+
+  &__svg-link:hover,
+  &__svg-link:focus {
+  background-color: $accent-color;
+  }
+
+  &__svg-link:hover &__icon-color,
+  &__svg-link:focus &__icon-color {
+  fill: $white-color;
+  }
+}
+
+// Footer icons
+
+.footer-list-icons {
+  display: flex;
+  width: 206px;
+  justify-content: space-between;
+
+  &__svg-link {
+    @extend %svg-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+
+    transition: background-color 250ms $timing-function;
+  }
+}
+
+.footer-list-icons {
+  @extend %flex;
+  width: 206px;
+
+  &__svg-link:hover,
+  &__svg-link:focus {
+    background-color: $accent-color;
+  }
+
+  &--footer-social-icon {
+    fill: $white-color;
+  }
+}
