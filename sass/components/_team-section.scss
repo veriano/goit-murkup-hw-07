@@ -28,8 +28,7 @@
 .team-wrapper {
   padding: 30px 0;
   background-color: white-color;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  @include boxShadow(0.12, 0.14, 0.2);
   border-radius: 0px 0px 4px 4px;
 
   &__name {
@@ -54,19 +53,11 @@
 .team-wrapper {
   padding: 30px 0;
   background-color: $icon-color;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  @include boxShadow(0.12, 0.14, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-<<<<<<< Updated upstream
-  &__icon-color {
-  fill: $icon-color;
-
-  transition: fill 250ms $timing-function;
-=======
   &--icon-color {
-  fill: var(--icon-color);
->>>>>>> Stashed changes
+  fill: $icon-color;
   }
 
   &__svg-link {
@@ -84,10 +75,8 @@
 .team-wrapper {
   padding: 30px 0;
   background-color: $white-color;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-
+  @include boxShadow(0.12, 0.14, 0.2);
   &__svg-link:hover,
   &__svg-link:focus {
   background-color: $accent-color;
@@ -97,20 +86,13 @@
 .team-wrapper {
   padding: 30px 0;
   background-color: $white-color;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  @include boxShadow(0.12, 0.14, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-<<<<<<< Updated upstream
-  &__svg-link:hover &__icon-color,
-  &__svg-link:focus &__icon-color {
-  fill: $white-color;
-=======
   &__svg-link:hover .team-wrapper--icon-color,
   &__svg-link:focus .team-wrapper--icon-color {
-  fill: var(--white-color);
+  fill: $white-color;
 
   transition: fill 250ms var(--timing-function);
->>>>>>> Stashed changes
   }
 }

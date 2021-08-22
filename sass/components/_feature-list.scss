@@ -1,0 +1,42 @@
+.feature-list {
+  @extend %flex;
+
+  &__description {
+  width: 270px;
+  }
+}
+
+.feature-list {
+  @extend %flex;
+
+  &__title-one {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  color: $primary-color;
+  }
+  
+  &__description-list {
+  font-size: 14px;
+  line-height: 1.7;
+  color: $onemore-color;
+  }
+}
+
+.svg-wrapper {
+  display: flex;
+  width: 100%;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: $team-color;
+
+  &__icon-picture {
+  display: block;
+  }
+}
+
+

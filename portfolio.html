@@ -14,7 +14,7 @@
         <header class="page-header">
             <div class="container">
             <div class="header-list">
-         <a href="" class="header-list__logo">Web<span class="header-list__web">Studio</span></a>
+         <a href="" class="logo">Web<span class="logo__studio logo__studio--dark">Studio</span></a>
          <nav>
             <ul class="header-navigation">
                  <li class="header-navigation__list-item"><a href="index.html" class="header-navigation__navigation">Студия</a></li>
@@ -38,14 +38,15 @@
         <main>
             <!-- Портфолио -->
         <section class="project-section"> 
-        <h1 class="project-section__title">Портфолио</h1>
-        <ul class="buttons">
-            <li class="buttons__second-buttons"><button class="buttons__secondary-button" type="button">Все</button></li>
-            <li class="buttons__second-buttons"><button class="buttons__secondary-button" type="button">Веб-сайты</button></li>
-            <li class="buttons__second-buttons"><button class="buttons__secondary-button" type="button">Приложения</button></li>
-            <li class="buttons__second-buttons"><button class="buttons__secondary-button" type="button">Дизайн</button></li>
-            <li class="buttons__second-buttons"><button class="buttons__secondary-button" type="button">Маркетинг</button></li>
+        <h1 class="hidden__title">Портфолио</h1>
+        <ul class="list-buttons">
+            <li class="list-buttons__second-buttons"><button class="list-buttons__secondary-button" type="button">Все</button></li>
+            <li class="list-buttons__second-buttons"><button class="list-buttons__secondary-button" type="button">Веб-сайты</button></li>
+            <li class="list-buttons__second-buttons"><button class="list-buttons__secondary-button" type="button">Приложения</button></li>
+            <li class="list-buttons__second-buttons"><button class="list-buttons__secondary-button" type="button">Дизайн</button></li>
+            <li class="list-buttons__second-buttons"><button class="list-buttons__secondary-button" type="button">Маркетинг</button></li>
         </ul>
+        
         <div class="container">
 
         <ul class="card-set">
@@ -207,7 +208,7 @@
             <div class="container container--footer-flex">
                 <div class="footer-wrapper">
             <div class="footer-logo-wrapper">
-                <a href="" class="footer-logo-wrapper__logo">Web<span class="footer-logo-wrapper__studio">Studio</span></a>
+                <a href="" class="logo">Web<span class="logo__studio logo__studio--white">Studio</span></a>
                 </div>
             <address>
                  <ul class="footer-wrapper__footer-contacts">
@@ -217,8 +218,8 @@
                 </ul>
             </address>
             </div>
-            <div>
-                <h4 class="container__footer-title">ПРИСОЕДИНЯЙТЕСЬ</h4>
+            <div class="footer-icons-wrapper">
+                <h4 class="footer-title">ПРИСОЕДИНЯЙТЕСЬ</h4>
                 <ul class="footer-list-icons">
                     <li><a href="" class="footer-list-icons__svg-link">
                             <svg class="footer-list-icons--footer-social-icon" width="20" height="20">
@@ -243,15 +244,15 @@
                 </ul>
             </div>
             <form class="footer-form">
-                <p class="footer-form__caption">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
-                <div class="form-field-button-wrapper">
+                <p class="footer-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+                <div class="footer-form-field">
                     <label>
-                        <input class="form-field-button-wrapper__form-field" type="email" name="mail" placeholder="E-mail">
+                        <input class="footer-form-field__input" type="email" name="mail" placeholder="E-mail">
                     </label>
                     
-                    <button type="submit" class="form-field-button-wrapper__form-button">
-                        <span class="form-field-button-wrapper__text-button">Подписаться</span>
-                        <svg class="form-field-button-wrapper__button-svg" width="24px" height="24px">
+                    <button type="submit" class="footer-form-field__form-button">
+                        <span class="footer-form-field__text-button">Подписаться</span>
+                        <svg class="footer-form-field__button-svg" width="24px" height="24px">
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg>
                     </button>

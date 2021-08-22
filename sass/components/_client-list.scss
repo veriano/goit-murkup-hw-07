@@ -18,10 +18,6 @@
 
     transition: fill 250ms $timing-function;
   }
-}
-
-.client-list {
-  @extend %flex;
 
   &__client-link:hover,
   &__client-link:focus {

@@ -34,6 +34,14 @@ a {
   margin: 0 auto;
 }
 
+.container--footer-flex {
+    display: flex;
+}
+
+.second-section {
+  padding: 94px 0 47px 0;
+}
+
 .images-section {
   padding: 47px 0 94px 0;
 }
@@ -56,16 +64,15 @@ a {
   background-color: $black-color;
 }
 
-.container--footer-flex {
-    display: flex;
+.footer-icons-wrapper {
+  margin-top: 12px;
+  width: 206px;
 }
 
-.container__footer-title {
-    font-weight: 700;
-    font-size: 14px;
-    color: $white-color;
-    margin: 12px 0 20px;
+.footer-form {
+  margin: 12px 0 0 auto;
 }
+
 
 
 

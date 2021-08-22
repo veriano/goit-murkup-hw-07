@@ -1,31 +1,22 @@
-// image title
+// image title, team title, client title
 
-.images-section__title {
+.section__title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   color: primary-color;
   text-align: center;
 }
-// team title
-
-  .team-section__title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  color: $primary-color;
-  text-align: center;
-}
-// client title
-
-.clients-section__title {
-    width: 390px;
-    margin: 0 auto 50px;
-    font-weight: 700;
-    font-size: 36px;
-}
 // project title
 
-.project-section__title {
+.hidden__title {
     @extend %is-hidden;
   }
+  // footer title
+
+.footer-title {
+    font-weight: 700;
+    font-size: 14px;
+    color: $white-color;
+    margin-bottom: 20px;
+}

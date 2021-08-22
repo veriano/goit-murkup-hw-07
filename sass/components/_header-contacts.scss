@@ -28,9 +28,9 @@
 .header-contacts__header-icon {
   margin-right: 10px;
   fill: $onemore-color;
-}
 
-.header-contacts__link-contact:hover .header-contacts__header-icon,
-.header-contacts__link-contact:focus .header-contacts__header-icon {
+.header-contacts__link-contact:hover &,
+.header-contacts__link-contact:focus & {
   fill: $accent-color;
+ }
 }

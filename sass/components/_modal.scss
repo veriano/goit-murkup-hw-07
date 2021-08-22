@@ -1,0 +1,45 @@
+.backdrop .modal {
+  transform: translate(-50%, -50%) scale(0.5);
+  transition: transform 250ms $timing-function;
+}
+
+.modal__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.17;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  padding: 40px;
+  border-radius: 4px;
+  background-color: $white-color;
+  @include boxShadow(0.12, 0.14, 0.2);
+
+  transform: translate(-50%, -50%) scale(1);
+
+  // modal-button
+  &__close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    margin: 8px;
+    background-color: $white-color;
+    border: solid 1px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &__close-button:hover &__svg-close-button,
+  &__close-button:focus &__svg-close-button {
+    fill: $accent-color;
+  }
+}

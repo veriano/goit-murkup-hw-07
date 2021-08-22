@@ -1,23 +1,26 @@
 @import "./base/normalize";
+
 @import "./utils/variables";
+@import "./utils/mixins";
 @import "./utils/placeholders";
+
 @import "./components/common";
+
 @import "./components/titles";
 @import "./components/page-header";
 @import "./components/logos";
 @import "./components/header-navigation";
 @import "./components/header-contacts";
 @import "./components/first-section";
-@import "./components/second-section";
+@import "./components/buttons";
+@import "./components/feature-list";
 @import "./components/images-list";
 @import "./components/icons";
 @import "./components/team-list";
 @import "./components/client-list";
-@import "./components/project-buttons";
 @import "./components/card-set";
 @import "./components/footer-contacts";
-@import "./components/footer-form";
 @import "./components/backdrop";
-@import "./components/modal-form-title";
-@import "./components/modal-form-inputs";
-@import "./components/modal-form-button";
+@import "./components/modal";
+@import "./components/inputs";
+
