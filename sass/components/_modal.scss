@@ -1,6 +1,5 @@
-.backdrop .modal {
+.backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.5);
-  transition: transform 250ms $timing-function;
 }
 
 .modal__title {
@@ -23,6 +22,7 @@
   @include boxShadow(0.12, 0.14, 0.2);
 
   transform: translate(-50%, -50%) scale(1);
+   transition: transform 250ms $timing-function;
 
   // modal-button
   &__close-button {

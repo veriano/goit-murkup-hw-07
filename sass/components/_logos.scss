@@ -7,29 +7,15 @@
   font-size: 26px;
   line-height: 1.38;
 
-  &__studio {
+  &--with-margin-right {
     margin-right: 93px;
   }
 
-  &__studio--dark {
+  &--dark {
       color: $black-dark-color;
     }
-}
-  // Footer Logo
 
-.logo {
-    @extend %blue-color;
-    height: 31px;
-    font-family: $secondary-font;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.38;
-  
-  &__studio {
-    font-family: inherit;
-  }
-
-  &__studio--white{
+  &--white{
       color: $white-color;
    }
 }

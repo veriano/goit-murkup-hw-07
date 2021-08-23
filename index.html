@@ -15,7 +15,7 @@
         <header class="page-header">
         <div class="container">
             <div class="header-list">
-         <a href="" class="logo">Web<span class="logo__studio logo__studio--dark">Studio</span></a>
+         <a href="" class="logo logo--with-margin-right">Web<span class="logo--dark">Studio</span></a>
          <nav>
             <ul class="header-navigation">
                  <li class="header-navigation__list-item"><a href="index.html" class="header-navigation__navigation header-navigation__current">Студия</a></li>
@@ -42,7 +42,7 @@
         <main>
         <section class="first-section">
             <h1 class="first-section__main-title">Эффективные решения <br>для вашего бизнеса</h1>
-            <button type="button" class="primary-button" data-modal-open>Заказать услугу</button>
+            <button type="button" class="primary-button primary-button--hover primary-button--focus" data-modal-open>Заказать услугу</button>
         </section>
         <!-- Чем занимается студия -->
          <section class="second-section">
@@ -92,34 +92,27 @@
             <h2 class="section__title">Чем мы занимаемся</h2>
             <div class="container">
             <ul class="images__list">
-                <li>
+                <li class="picture-item">
                     <a href="#">
-                    <div class="picture-item-wrapper">
                         <img src="./images/box1.jpg" alt="робочий стол разработчика" width="370">
-                    
                     <div class="picture-item-wrapper__overlay-picture">
                         <span class="picture-item-wrapper__text-overlay">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</span>
                     </div>
-                    </div>
                     </a>
                 </li>
-                <li>
+                <li class="picture-item">
                     <a href="#">
-                    <div class="picture-item-wrapper">
                         <img src="./images/img1.jpg" alt="ноутбук разработчика" width="370">
                         <div class="picture-item-wrapper__overlay-picture">
                             <span class="picture-item-wrapper__text-overlay">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</span>
                         </div>
-                        </div>
                         </a>
                 </li>
-                <li>
+                <li class="picture-item">
                     <a href="#">
-                    <div class="picture-item-wrapper">
                         <img src="./images/img2.jpg" alt="планшет разработчика" width="370">
                         <div class="picture-item-wrapper__overlay-picture">
                             <span class="picture-item-wrapper__text-overlay">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</span>
-                        </div>
                         </div>
                         </a>
                     </li>
@@ -338,7 +331,7 @@
             <div class="container container--footer-flex">
                 <div class="footer-wrapper">
             <div class="footer-logo-wrapper">
-                <a href="" class="logo">Web<span class="logo__studio logo__studio--white">Studio</span></a>
+                <a href="" class="logo">Web<span class="logo--white">Studio</span></a>
                 </div>
             <address>
                 <ul class="footer-wrapper__footer-contacts">
@@ -383,8 +376,8 @@
                     <input class="footer-form-field__input" type="email" name="mail" placeholder="E-mail">
                     </label>
 
-                    <button type="submit" class="footer-form-field__form-button">
-                    <span class="footer-form-field__text-button">Подписаться</span>
+                    <button type="submit" class="primary-button primary-button--flex">
+                    <span class="primary-button--with-margin-right">Подписаться</span>
                 <svg class="footer-form-field__button-svg" width="24px" height="24px">
                     <use href="./images/icons.svg#icon-send"></use>
                 </svg>
@@ -395,10 +388,10 @@
             </div>
         </footer>
 
-        <div class="backdrop" data-modal>
+        <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button type="button" class="modal__close-button" data-modal-close>
-                    <svg class="svg-close-button" width="11" height="11">
+                    <svg class="modal__svg-close-button" width="11" height="11">
                         <use href="./images/icons.svg#icon-close"></use>
                     </svg>
                 </button>
@@ -453,7 +446,7 @@
                 <a href="#" class="link-checkbox">Условия договора</a>
                 </label>
             
-            <button type="submit" name="button" value="submittion" class="form-button">Отправить</button>
+            <button type="submit" name="button" value="submittion" class="primary-button primary-button--box-shadow">Отправить</button>
                 </form>
             </div>
         </div>

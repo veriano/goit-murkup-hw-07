@@ -1,0 +1,50 @@
+.team-wrapper {
+  padding: 30px 0;
+  background-color: white-color;
+  @include boxShadow(0.12, 0.14, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  &__name {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  color: primary-color;
+  }
+
+  &__position {
+  margin-bottom: 16px;
+  color: $onemore-color;
+  }
+}
+  
+.team-wrapper__icons {
+  @extend %flex;
+  padding: 0 32px;
+}
+
+.team-wrapper--icon-color {
+  fill: $icon-color;
+}
+
+.team-wrapper__svg-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+
+  transition: background-color 250ms $timing-function;
+}
+
+.team-wrapper__svg-link:hover,
+.team-wrapper__svg-link:focus {
+  background-color: $accent-color;
+}
+
+.team-wrapper__svg-link:hover .team-wrapper--icon-color,
+.team-wrapper__svg-link:focus .team-wrapper--icon-color {
+  fill: $white-color;
+
+  transition: fill 250ms var(--timing-function);
+}

@@ -2,10 +2,11 @@
   @extend %flex;
 }
 
-.picture-item-wrapper {
+.picture-item {
   position: relative;
+}
 
-  &__overlay-picture {
+.picture-item-wrapper__overlay-picture {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -17,9 +18,9 @@
   background-color: rgba(47, 48, 58, 0.8);
   }
   
-  &__text-overlay {
+.picture-item-wrapper__text-overlay {
   font-weight: bold;
   font-size: 14px;
   color: $white-color;
-  }
 }
+
