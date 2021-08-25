@@ -29,6 +29,11 @@
   margin-right: 10px;
   fill: $onemore-color;
 
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+
 .header-contacts__link-contact:hover &,
 .header-contacts__link-contact:focus & {
   fill: $accent-color;

@@ -511,6 +511,10 @@ a {
   fill: #757575;
 }
 
+.header-contacts__header-icon:hover, .header-contacts__header-icon:focus {
+  fill: #2196f3;
+}
+
 .header-contacts__link-contact:hover .header-contacts__header-icon,
 .header-contacts__link-contact:focus .header-contacts__header-icon {
   fill: #2196f3;
@@ -1172,6 +1176,10 @@ a {
 .backdrop.is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(0.5);
           transform: translate(-50%, -50%) scale(0.5);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__title {
