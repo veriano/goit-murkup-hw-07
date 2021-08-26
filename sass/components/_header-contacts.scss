@@ -15,8 +15,7 @@
   font-size: 14px;
   line-height: 1.17;
 
-  transition: fill 250ms $timing-function,
-    color 250ms $timing-function;
+  transition: color 250ms $timing-function;
 }
 
 .header-contacts__link-contact:hover,
@@ -28,6 +27,8 @@
 .header-contacts__header-icon {
   margin-right: 10px;
   fill: $onemore-color;
+
+  transition: fill 250ms $timing-function;
 
   &:hover,
   &:focus {
